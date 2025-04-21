@@ -1,5 +1,5 @@
 :root {
-  --red: #ff7a7a;
+  --red: rgb(255, 122, 122);
   --green: #38cc8c;
   --purple: #6055a5;
   --grey: #3e3c49;
@@ -19,21 +19,72 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-color: rgba(255, 122, 122, 0.9);
 }
 
 .parent {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
 }
 
-.card {
+.child {
+  color: #ffffff;
+}
+
+.banner {
+  background-color: var(--purple);
+  box-shadow: 20px 0px 1px 41x rgb(0, 0, 0);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
 }
 
 form {
-  max-width: 400px;
-  margin: 40px auto;
-  background-color: var(--lightblue);
+  background-color: #ffffff;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: solid 0.4rem var(--Catalina);
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 5px;
+  align-items: center;
+}
+input,
+textarea {
+  margin-bottom: 2rem;
+  font: 1em sans-serif;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid 0.1rem var(--grey);
+  padding: 1rem;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  color: var(--white);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  background-color: var(--green);
+  box-shadow: 2px 0px 1px 41x rgb(0, 0, 0);
+  display: inline-block;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.terms {
+  color: var(--lavender);
+  font-size: small;
+}
+a {
+  color: var(--red);
 }
