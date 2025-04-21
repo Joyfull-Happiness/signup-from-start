@@ -1,0 +1,19 @@
+:root {
+  --red: #ff7a7a;
+  --green: #38cc8c;
+  --purple: #6055a5;
+  --grey: #3e3c49;
+  --lavender: #b9b6d3;
+  /* font family should be Poppins, weights 400, 500, 600, 700 */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  background-image: url("https://assets.codepen.io/t-15440/itp-w11-signup-bg-desktop.png");
+}
