@@ -1,3 +1,26 @@
+let container = document.quereySelector(".container");
+
+let form = document.quereySelector("form");
+form.addEventlistener("submit", onformsubmit);
+console.log("form:", form); 
+
+function onformsubmit(){
+    event.preventDeafult();
+    const data = new FormData(event.target);
+    const dataObject = Object.fromEntries(data.entries());
+    console.log(dataObject);
+
+    form.rest();
+
+    let firstName = dataObject.firstName;
+    let lastName  = dataObject.lastName;
+    let email = dataObject.email;
+    let password = dataObject.password;
+
+    let message =
+}
+)
+
 /* 
 Code the following design for desktop only:
 https://assets.codepen.io/t-15440/itp-w11-signup-desktop-design.jpg
