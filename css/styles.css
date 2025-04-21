@@ -15,5 +15,25 @@ html {
   box-sizing: inherit;
 }
 body {
-  background-image: url("https://assets.codepen.io/t-15440/itp-w11-signup-bg-desktop.png");
+  background-image: url("../images/background_codepen.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+}
+
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: var(--lightblue);
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: solid 0.4rem var(--Catalina);
 }

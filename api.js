@@ -17,7 +17,13 @@ function onformsubmit(){
     let email = dataObject.email;
     let password = dataObject.password;
 
-    let message =
+    let message = `congrats ${firstName} on your free trial!`
+
+    console.log("first message to user:", message); 
+
+    let messageParagraph = document.createElement("p");
+    messageParagraph.textContent = message;
+    container.appendChild(messageParagraph);
 }
 )
 
