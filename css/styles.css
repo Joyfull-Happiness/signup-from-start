@@ -37,16 +37,17 @@ body {
 
 .banner {
   background-color: var(--purple);
-  box-shadow: 20px 0px 1px 41x rgb(0, 0, 0);
+  box-shadow: 0px 5px rgba(175, 107, 107, 0.9);
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 5px;
+  text-align: center;
 }
 
 form {
   background-color: #ffffff;
   font-family: Arial, sans-serif;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px rgba(175, 107, 107, 0.9);
   border: solid 0.4rem var(--Catalina);
   padding: 2rem;
   gap: 1rem;
@@ -61,11 +62,12 @@ textarea {
   border-radius: 10px;
   border: solid 0.1rem var(--grey);
   padding: 1rem;
+  width: 100%;
 }
 
 button {
-  margin-top: 1.5rem;
   padding: 0.5rem;
+  margin-bottom: 1rem;
   color: var(--white);
   font-size: 1.2rem;
   border: none;
@@ -73,8 +75,8 @@ button {
   transition: background-color 0.3s ease;
   border-radius: 5px;
   background-color: var(--green);
-  box-shadow: 2px 0px 1px 41x rgb(0, 0, 0);
-  display: inline-block;
+  box-shadow: 0px 5px rgba(40, 98, 22, 0.9);
+  width: 100%;
 }
 
 button:hover {
@@ -85,6 +87,15 @@ button:hover {
   color: var(--lavender);
   font-size: small;
 }
+span {
+  font-weight: bold;
+}
 a {
   color: var(--red);
+}
+
+@media (max-width: 500px) {
+  .parent {
+    grid-template-columns: 1fr;
+  }
 }
